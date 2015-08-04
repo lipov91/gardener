@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Jan%20Lipka/AndroidStudioProjects/Gardener/app/src/main/res/layout/activity_movies.xml -->

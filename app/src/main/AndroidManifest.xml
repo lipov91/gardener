@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.survivingwithandroid.actionbartabnavigation"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BIND_JOB_SERVICE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_flower"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name="com.survivingwithandroid.actionbartabnavigation.FlowerListActivity"
+            android:label="@string/flowers"/>
+
+        <activity
+            android:name="com.survivingwithandroid.actionbartabnavigation.updater.UpdaterActivity"
+            android:label="@string/updates"/>
+
+        <activity
+            android:name="com.survivingwithandroid.actionbartabnavigation.updater.Updater2Activity"
+            android:label="@string/updates"/>
+
+        <activity
+            android:name=".news.NewsActivity"
+            android:label="@string/news" />
+
+        <activity
+            android:name=".gardeningtools.GardeningToolsActivity"
+            android:label="@string/gardening_tools" />
+
+        <activity
+            android:name=".tasksscheduling.DeviceSettingsActivity"
+            android:label="@string/device_settings" />
+
+        <activity
+            android:name=".flowersmanagement.FlowersManagementActivity"
+            android:label="@string/flowers_management" />
+
+        <activity
+            android:name=".flowersmanagement.SlideshowActivity"
+            android:label="@string/slideshow" />
+
+        <activity android:name=".flowersmanagement.OwnFlowersListActivity" />
+
+        <activity
+            android:name=".comunicator.ComunicatorActivity"
+            android:label="@string/communication_form" />
+
+        <activity
+            android:name=".flowersmanagement.MoviesActivity"
+            android:label="@string/movies" />
+
+        <activity
+            android:name=".comunicator.CommunicatorOptionActivity"
+            android:label="@string/communicator" />
+
+        <activity
+            android:name=".comunicator.BluetoothActivity"
+            android:label="@string/communication_bluetooth" />
+
+        <activity
+            android:name=".flowersmanagement.SearchActivity"
+            android:label="@string/search" />
+
+        <activity
+            android:name=".flowersmanagement.SearchableActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity android:name=".flowersmanagement.FlowerDetailsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.survivingwithandroid.search.flowers" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.survivingwithandroid.actionbartabnavigation.services.DownloadService" />
+
+        <service
+            android:name=".services.GardeningToolsService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_info" />
+
+        <service android:name=".tasksscheduling.JobScheduleService" />
+
+        <receiver android:name=".services.SheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".services.StartServiceReceiver" />
+
+        <receiver android:name=".MainActivity$UpdatesBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.survivingwithandroid.actionbartabnavigation.ACTION_UPDATES" />
+            </intent-filter>
+        </receiver>
+
+        <!--Wyszukiwanie-->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.survivingwithandroid.actionbartabnavigation.flowersmanagement.SearchableActivity" />
+        <provider
+            android:name="com.survivingwithandroid.actionbartabnavigation.flowersmanagement.FlowersContentProvider"
+            android:authorities="com.survivingwithandroid.actionbartabnavigation.flowersmanagement.FlowersContentProvider"
+            android:multiprocess="true" />
+
+    </application>
+
+</manifest>

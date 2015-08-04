@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="intents">
+        <item>Przeglądarka</item>
+        <item>Telefon do zarządu</item>
+        <item>Wybierz numer</item>
+        <item>Lokalizacja zarządu</item>
+        <item>Szukaj na mapie</item>
+        <item>Obrazek</item>
+        <item>Kontakty</item>
+        <item>Edytuj kontakt</item>
+    </string-array>
+
+</resources>

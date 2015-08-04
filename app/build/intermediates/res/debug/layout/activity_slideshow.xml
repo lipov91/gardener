@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/instruct"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <TextSwitcher
+        android:id="@+id/tsStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageSwitcher
+        android:id="@+id/isImages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextSwitcher
+        android:id="@+id/tsInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout><!-- From: file:/C:/Users/Jan%20Lipka/AndroidStudioProjects/Gardener/app/src/main/res/layout/activity_slideshow.xml -->

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gardener</string>
+    <string name="app_info">Aplikacja do zarządzania ogrodem</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="base_flowers">Baza roślin</string>
+    <string name="flowers_management">Baza Twoich roślin</string>
+    <string name="flower_description">Opis rośliny</string>
+    <string name="main_page">Strona główna</string>
+    <string name="flowers">Baza roślin</string>
+    <string name="updater">Pobierz aktualizacje</string>
+    <string name="updates">Pobieranie aktualizacji</string>
+    <string name="news">Nowinki</string>
+    <string name="download_news">Pobierz nowinki</string>
+    <string name="download_status">Status pobierania: </string>
+    <string name="download_status_not_started">Oczekiwanie...</string>
+    <string name="gardening_tools">Narzędzia ogrodnicze</string>
+    <string name="show_new_tools">Zobacz najnowsze narzędzia</string>
+    <string name="device_settings">Ustawienia urządzenia</string>
+    <string name="constraints">Ograniczenia</string>
+    <string name="connectivity">Opcje łączności</string>
+    <string name="any">Dowolna</string>
+    <string name="unmetered">WIFI</string>
+    <string name="timing">Chronometraż</string>
+    <string name="delay">Opóźnienie</string>
+    <string name="deadline">Max.czas</string>
+    <string name="charging_caption">Ładowanie</string>
+    <string name="charging_text">Mechanizm wbudowany</string>
+    <string name="idle_caption">Bezczynność</string>
+    <string name="idleText">Pozwój urządzeniu przechodzić w stan bezczynności</string>
+    <string name="save_settings">Zapisz ustawienia</string>
+    <string name="cancel_settings">Anuluj ustawienia</string>
+    <string name="enter_flowers_data">Podaj informacje o roślinie</string>
+    <string name="flower_name">Nazwa rośliny:</string>
+    <string name="flower_category">Kategoria:</string>
+    <string name="save">Zapisz</string>
+    <string name="show_all_flowers">Pokaż wszystkie rośliny</string>
+    <string name="your_flowers">Twoje rośliny</string>
+    <string name="add_more_flowers">Dodaj więcej kwiatów</string>
+    <string name="speak">Powiedz nazwę rośliny</string>
+    <string name="instruct">Rozpocznij pokaz slajdów</string>
+    <string name="slideshow">Pokaz slajdów</string>
+    <string name="get_message">Odbierz wiadomość</string>
+    <string name="communicator">Komunikator</string>
+    <string name="movies">Film o roślinach</string>
+    <string name="btn_switch">Włącz</string>
+    <string name="connect">Połącz się z innym urządzeniem</string>
+    <string name="send_message">Prześlij wiadomość</string>
+    <string name="communication_option">Wybierz metodę komunikacji:</string>
+    <string name="form">Formularz</string>
+    <string name="communication_form">Komunikator - Formularz</string>
+    <string name="communication_bluetooth">Komunikator - Bluetooth</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="search">Wyszukiwarka</string>
+    <string name="reset_data">Resetuj dane</string>
+    <string name="req_search">Szukaj</string>
+    <string name="device_search_settings">Opcje wyszukiwania</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutHeader"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvFlowerName"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tvFlowerCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout><!-- From: file:/C:/Users/Jan%20Lipka/AndroidStudioProjects/Gardener/app/src/main/res/layout/item_own_flower.xml -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_option"
+        android:id="@+id/textView"
+        android:layout_margin="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/form"
+        android:id="@+id/btnForm"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth"
+        android:id="@+id/btnBluetooth"
+        android:onClick="onClick"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+</LinearLayout><!-- From: file:/C:/Users/Jan%20Lipka/AndroidStudioProjects/Gardener/app/src/main/res/layout/activity_communicator_option.xml -->

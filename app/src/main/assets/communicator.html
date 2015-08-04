@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script type="text/javascript">
+function sendMessage() {
+
+    jse.toast("Wiadomoœæ od admina", jse.TOAST_LONG);
+    jse.getAdminMessage(document.getElementById('tfMessage').value);
+}
+
+function getMessage(message) {
+
+    document.getElementById('tfResponse').value = message;
+}
+    </script>
+
+</head>
+<body>
+
+<form>
+    <input type="text" id="tfMessage" value="wiadomoœæ"/><br/>
+    <input type="text" id="tfResponse" readonly/> <br />
+    <input type="button" value="Wyœlij wiadomoœæ" onclick="sendMessage();"/>
+</form>
+
+</body>
+
+</html>

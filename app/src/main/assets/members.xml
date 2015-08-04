@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<members>
+    <member>
+        <id>2163</id>
+        <name>Kumar</name>
+        <degree>Szeregowy</degree>
+        <email>kumar@tot.com</email>
+    </member>
+    <member>
+        <id>6752</id>
+        <name>Siva</name>
+        <degree>Podoficer</degree>
+        <email>siva@tot.com</email>
+    </member>
+    <member>
+        <id>6763</id>
+        <name>Timmy</name>
+        <degree>Podoficer starszy</degree>
+        <email>timmy@tot.com</email>
+    </member>
+</members>
